@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+body {
+  margin-top:50px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+}
+form {
+    border: 3px solid #f44336;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+a.btn:hover {
+  background-color: aqua;
+  color: black;
+  transition: 0.5s;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    
+}
+a{
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 30%;
+}
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+<div style="width: 50%;margin-left: 25%;">
+<form>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div style="background-color:#f1f1f1;padding-left: 28%;">
+    <a href="#" class="btn btn-success" role="button">Login</a>
+    <a href="index.html" class="btn btn-danger">Cancel</a>
+  </div>
+</form>
+</div>
+</body>
+</html>
